@@ -1,0 +1,115 @@
+<head>
+    <html>
+        <title>Deez Nuts</title>
+        <style>
+    
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+    
+        body {
+            display: table;
+            background-color: rgb(20, 20, 20);
+        }
+    
+        .my-block {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 1000%;
+            color:rgb(255, 255, 255);
+        }
+        .ma-block {
+            text-align: center;
+            display: table-cell;
+            vertical-align: bottom;
+            font-size: 16px;
+            color:rgb(255, 255, 255);
+        }
+    .button1 {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #4CAF50;
+    }
+    .button1:hover {
+      background-color: #614caf;
+      color: white;
+    }
+    .button {
+      border: none;
+      color: rgb(0, 0, 0);
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    
+        </style>
+    </head>
+    <body>
+    <div class="my-block">
+       Deez Nuts
+    
+       
+    </div>
+    
+    <div class="center">
+        <button class="button button1" onclick="calcer()">Weather</button>
+        
+        
+     </div>
+    
+    
+    
+    
+    <script>
+        function calcer() {
+      var city = prompt("What's your city?");
+      x = Math.floor((Math.random() * 8) + 1);
+      if (x == 1){
+          y = "The Sun";
+          d = Math.floor((Math.random() * 100000000) + 1);
+      } else if (x == 2){
+          y = "Mercury";
+          d = Math.floor((Math.random() * 216) + 1);
+      } else if (x == 3){
+          y = "Venus";
+          d = Math.floor((Math.random() * 417) + 1);
+      } else if (x == 4){
+          y = "Mars";
+          d = Math.floor((Math.random() * 21) + 1);
+      } else if (x == 5){
+          y = "Jupiter";
+          d = Math.floor((Math.random() * 725) + 1)
+      } else if (x == 6){
+          y = "Saturn";
+          d = Math.floor((Math.random() * 11700) + 1)
+      } else if (x == 6){
+          y = "Uranus"
+          d = Math.floor((Math.random() * 4982) + 1) 
+      } else{
+          y = "Neptune"
+          d = Math.floor((Math.random() * 7000) + 1) 
+      }
+     
+     
+      alert("The weather on " + y  + " is " + d + " degrees celsius.")
+      }
+      </script>
+    </body>
+</html>
